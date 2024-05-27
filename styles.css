@@ -112,7 +112,8 @@ a{
 }
 
 .textogood{
-    flex-basis: 90%;
+    flex-basis: 100%;
+    height: auto;
     animation: titulo 2s forwards 4s;
     opacity: 0%;
     font-size:90px;
@@ -200,12 +201,12 @@ a{
     justify-content: center;
 }
 .cafe>img{
-    width: 70%;
+    width: 50%;
     height: auto;
     border: 5px #3C1A07 solid;  
 }
 .libros>img{ 
-    width: 90%;
+    width: 50%;
     height: auto;
     border: 5px #3C1A07 solid;
     background-image: url(imagenes/R.jpg);
@@ -213,7 +214,7 @@ a{
     background-size: cover; 
 }
 .clientes>img{
-    width: 80%;
+    width: 50%;
     height: auto;
     border: 5px #3C1A07 solid; 
 }

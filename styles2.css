@@ -73,7 +73,7 @@ a{
 .fondo{
     width: 100%;
     height: auto;
-    background-image: url(https://th.bing.com/th/id/R.e21158fa932fd2c60fdee3ccd34c95d0?rik=xLpZuP4V4hJIzg&riu=http%3a%2f%2fwww.solofondos.com%2fwp-content%2fuploads%2f2015%2f12%2ftextura-de-madera-oscura-1553.jpg&ehk=Y99WCqN%2fdH7Xwvt%2f3Z0O9jGxj26PBhHp9v9NRJqwYwg%3d&risl=&pid=ImgRaw&r=0);
+    background-image: url(imagenes/Fondo.jpg);
     background-position: center;
     background-size: cover;    
     display: flex;
