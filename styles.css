@@ -1,0 +1,443 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: 0;
+}
+
+body{
+    background-color:hsl(0,0%,5.88%);
+}
+
+div{
+    color: white;
+}
+div>a{
+    color: white;
+}
+
+.menu{
+    background-color: hsl(0,0%,5.88%);
+    padding: 5px;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    height: 0%;
+    animation: des_men 3s forwards;
+}
+
+.menu *{
+    animation: des_menu_cont 3s forwards 2s ;
+    opacity: 0% ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    background-color: #7B3713;
+    border: 1px #3C1A07 solid;
+    color:whitesmoke;
+    font-size: 50px;
+    font-family: "Italianno", cursiva;
+}
+
+a{
+    text-decoration: none;
+    border:0;
+    width: 100%;
+    height: 100%;
+}
+
+.lo{
+    background-color: hsl(0,0%,5.88%);
+    border: none;
+}
+
+.in{
+    border-radius: 0 0 0 60%;
+    animation: me 6s linear infinite,des_menu_cont 3s forwards 2s ;
+}
+
+.logo{
+    width: 50%;
+    height: 95%;
+    border-radius: 50%;
+    animation: borde 6s linear infinite,des_menu_cont 3s forwards 2s ;
+}
+
+
+.fondo{
+    animation: des_menu_cont 3s forwards 3s;
+    height: 0%;
+    opacity: 0%;
+    width: 100%;
+    height: 120vh;
+    background-image: url(https://th.bing.com/th/id/R.e21158fa932fd2c60fdee3ccd34c95d0?rik=xLpZuP4V4hJIzg&riu=http%3a%2f%2fwww.solofondos.com%2fwp-content%2fuploads%2f2015%2f12%2ftextura-de-madera-oscura-1553.jpg&ehk=Y99WCqN%2fdH7Xwvt%2f3Z0O9jGxj26PBhHp9v9NRJqwYwg%3d&risl=&pid=ImgRaw&r=0);
+    background-position: center;
+    background-size: cover;    
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: space-evenly ;
+}
+
+.fondo>div{
+    font-family: "kalam",cursiva;
+}
+
+.saludo{
+    width: 80%;
+    height: auto;
+    background-color: #7B3713;
+    border: 2px black solid;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+}
+.saludo>div{
+    width: 50%;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img>img{
+    opacity: 0%;
+    width: 90%;
+    height: 90%;
+    background-size: cover;
+    background-position: center;
+    animation: imagen 5s forwards 5s;
+    position: relative;
+    top: 0%;
+}
+
+.textogood{
+    animation: titulo 2s forwards 4s;
+    opacity: 0%;
+    font-size: 80px;
+    font-family: "Italianno", cursiva;
+}
+
+.text{
+    opacity: 0%;
+    animation: letras 5s forwards 6s;
+}
+
+.Presentaciones_container{
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+.Presentaciones_container>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 30px ;
+}
+
+.ayuda{
+    width: 100%;
+}
+.art1{
+    opacity: 0%;
+    animation: letras 5s forwards 7s;
+    background-color: #7B3713;
+    border: 2px black solid;
+    width: 50%;
+    height: 10vh;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ayuda2{
+    width: 100%;
+}
+.art2,.art3,.art4{
+    opacity: 0%;
+    animation: letras 5s forwards 8s;
+    border: 2px black solid;
+    background-color: #7B3713;
+    width: 20%;
+    height: 10vh;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ayuda3{
+    width: 100%;
+}
+.art5,.art6,.art7{
+    opacity: 0%;
+    animation: letras 5s forwards 9s;
+    border: 2px black solid;
+    background-color: #7B3713;
+    width: 40%;
+    height: 10vh;
+    padding: 20px;
+    font-size: 15px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.textoresponsive{
+    display: none;
+}
+
+.copyright{
+    width: 100%;
+    height: 20vh;
+}
+.artC1 {
+    opacity: 50%;
+    font-size: 40px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Italianno", cursiva;
+    text-shadow: 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff, 0 0 50px #7B3713, 0 0 70px #7B3713, 0 0 80px #7B3713, 0 0 150px #7B3713;
+}
+
+.icons{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.icons>div>a>svg{
+    opacity: 50%;
+    display: flex;
+}
+.icons>div>a>svg{
+    border-radius: 50%;
+}
+.icons>div>a>svg:hover{
+    animation: iconos 5s forwards ;
+}
+
+.me>a,.ac>a,.le>a{
+    transition: all 0.5s;
+}
+
+.me>a:hover{
+    box-shadow: inset 0 0 10px 5px rgb(161, 161, 161);
+}
+
+.ac>a:hover{
+    box-shadow: inset 0 0 10px 5px rgb(161, 161, 161);
+}
+
+.le>a:hover{
+    box-shadow: inset 0 0 10px 5px rgb(161, 161, 161);
+
+}
+
+
+@keyframes borde{
+    0%{
+        filter:drop-shadow(0px 0px 15px rgb(114, 45, 18));
+    }
+
+    50%{
+        filter:drop-shadow(0px 0px 15px rgb(197, 189, 189));
+    }
+
+    75%{
+        filter:drop-shadow(0px 0px 15px rgb(119, 44, 0));
+    }
+
+    100%{
+        filter:drop-shadow(0px 0px 15px rgb(114, 45, 18));
+    }
+}
+
+@keyframes me{
+    0%{
+        box-shadow: inset 0 0 10px 5px rgb(119, 44, 0)
+    }
+
+    50%{
+        box-shadow: inset 0 0 10px 5px rgb(27, 27, 27);
+    }
+
+    100%{
+        box-shadow: inset 0 0 10px 5px rgb(119, 44, 0)
+    }
+}
+
+@keyframes letras {
+    0%{opacity: 0%;}
+    25%{opacity: 0%;}
+    50%{opacity: 100%;}
+    75%{opacity: 100%;}
+    100%{opacity: 100%;}
+}
+@keyframes imagen{
+    0%{opacity: 0%;}
+    25%{opacity: 0%;}
+    50%{opacity: 100%;}
+    75%{opacity: 100%;}
+    100%{opacity: 100%;}
+}
+
+@keyframes des_menu_cont {
+    0%{
+        opacity: 0%;
+    }
+    50%{
+       opacity: 100%;
+    } 
+    100%{
+        opacity: 100%;
+    }
+    
+}
+
+@keyframes titulo {
+    0%{
+        opacity: 0%;
+    }
+    50%{
+       opacity: 100%;
+    }
+    75%{
+        opacity: 100%;
+    } 
+    100%{
+        opacity: 0%;
+        display: none;
+    }
+}
+
+@keyframes des_men {
+    0%{
+        height:0%;
+    }
+    50%{
+        height: 20%;
+    } 
+    100%{
+        height: 20%;
+    }
+}
+
+@keyframes iconos {
+    0%{
+        width: 40px;
+        height: auto;
+        box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.5);
+    }
+    50%{
+        opacity: 100%;
+        width: 45px;
+        height: auto;
+        box-shadow: 0px 0px 5px 5px rgba(255, 255, 255, 0.5);
+    }
+    100%{
+        opacity: 100%;
+        width: 45px;
+        height: auto;
+        box-shadow: 0px 0px 5px 5px rgba(255, 255, 255, 0.5);
+    }
+}
+
+
+@media only screen and (max-width:436px){
+
+    .menu *{
+        font-size: 25px;
+    }
+    .logo{
+        width: 100%;
+        height: 100%;
+    }
+
+    .lo{
+        scale: 0.9;
+    }
+
+
+    .fondo{
+        height: 100%;
+    }
+    
+    .saludo{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        flex-flow: column wrap;
+    }
+    .img{
+        order: 2;
+    }
+    .img>img{
+        width: 190%;
+    }
+    .textogood{
+        animation: titulo 1ms forwards;
+    }
+    .Presentaciones_container{
+      width: 90%;
+    }
+   
+    .ayuda{
+        width: 90%;
+    }
+    .art1{
+       width: 100%;
+    }
+    .ayuda2{
+        display: none;
+    }
+    .art2,.art3,.art4{
+       display: none;
+    }
+    .textoresponsive{
+        display: block;
+    }
+    .ayuda3{
+        width: 90%;
+        flex-flow: column wrap;
+    }
+    .art5,.art6,.art7{
+        width: 90%;
+        height: auto;
+        flex-flow: row wrap;
+    }
+    .art5>div,.art6>div,.art7>div{
+        font-size: 25px;
+        margin-top: 10px;
+    }
+
+    .art5>img,.art6>img,.art7>img{
+        margin-top: 10px;
+    }
+    
+
+    
+    @keyframes titulo {
+        0%{
+            opacity: 0%;
+            display: none;
+        }
+        100%{
+            opacity: 0%;
+            display: none;
+        }
+    }
+}
+
+
+@media only screen and (max-width:740px){
+}
+
+
+

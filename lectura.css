@@ -8,8 +8,6 @@ body{
     background-color: hsl(0,0%,5.88%);
 }
 
-/* 
-Modificaciones de la estructura del menu de navegacion donde se le ponen micro animaciones y definicion de unos hovers */
 .menu{
     background-color: hsl(0,0%,5.88%);
     padding: 5px;
@@ -56,21 +54,6 @@ a{
     animation: borde 6s linear infinite;
     
 }
-
-.in:hover{
-    box-shadow: inset 0 0 10px 5px rgb(161, 161, 161);
-}
-
-.ac:hover{
-    box-shadow: inset 0 0 10px 5px rgb(161, 161, 161);   
-}
-
-.me:hover{
-    box-shadow: inset 0 0 10px 5px rgb(161, 161, 161);
-    
-}
-
-/* Modificaciones a las cajas que contienen las portadas de los libros y la lista de libros y posicionamiento usando grid */
 
 .container{
     display: grid;
@@ -141,7 +124,6 @@ a{
     grid-column: 7/13;
 }
 
-/* Modificacion del texto fuente y tamaños */
 .lista{
     flex-basis: 100%;
     border:none;
@@ -153,13 +135,8 @@ a{
     font-family: "kalam",cursiva;
 }
 
-
-.lista {
-    color: white;
-    animation-name: letras_z;
-    animation-duration: 30s;
-    animation-iteration-count: infinite;
-    transition-timing-function: cubic-bezier(0.1, 0.9, 0.3, 1);
+.lista>div> *{
+    animation: col 30s infinite;
 }
 
 .titulo{
@@ -172,7 +149,7 @@ a{
     justify-content: center;
 }
 
-/* Definicion de los tamaños de los background-image de los contenedores que tendran las portadas */
+
 .p1{
     background-repeat: no-repeat;
     background-size: 230px 240px;
@@ -200,29 +177,6 @@ a{
     background-position: center;
     animation: fi 30s infinite;
 }
-
-/* Asignacion de cambio de color del texto segun el libro que se muestre */
-.l1 {
-    animation-delay: 0s;
-}
-
-.l2 {
-    animation-delay: 5s;
-}
-
-.l3 {
-    animation-delay: 10s;
-}
-
-.l4 {
-    animation-delay: 15s;
-}
-
-.l5 {
-    animation-delay: 20s;  
-}
-
-/* Modificaciones del pie de la pagina y los iconos */
 
 .artC1{
     color: ghostwhite;
@@ -262,10 +216,57 @@ a{
     transition: all 0.5s;
 }
 
+.in:hover{
+    box-shadow: inset 0 0 10px 5px rgb(161, 161, 161);
+}
 
-/* Creacion de animaciones */
+.ac:hover{
+    box-shadow: inset 0 0 10px 5px rgb(161, 161, 161);   
+}
 
-/* Animacion del logo */
+.me:hover{
+    box-shadow: inset 0 0 10px 5px rgb(161, 161, 161);
+    
+}
+
+.lista {
+    color: white;
+    animation-name: letras_z;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    transition-timing-function: cubic-bezier(0.1, 0.9, 0.3, 1);
+}
+
+.l1 {
+    animation-delay: 0s;
+}
+
+.l2 {
+    animation-delay: 5s;
+}
+
+.l3 {
+    animation-delay: 10s;
+}
+
+.l4 {
+    animation-delay: 15s;
+}
+
+.l5 {
+    animation-delay: 20s;  
+}
+
+@keyframes letras_z {  
+    0%, 100% {
+        color: peru; 
+    }
+    20%, 40%, 60%, 80% {
+        color: white; 
+    }
+}
+
+
 
 @keyframes borde{
     0%{
@@ -285,7 +286,6 @@ a{
     }
 }
 
-/* animacion de la caja lectura del menu de navegacion */
 @keyframes le{
     0%{
         box-shadow: inset 0 0 10px 5px rgb(119, 44, 0)
@@ -299,8 +299,6 @@ a{
         box-shadow: inset 0 0 10px 5px rgb(119, 44, 0)
     }
 }
-
-/* animaciones de las portadas de los libros */
 
 @keyframes po{
 
@@ -398,8 +396,12 @@ a{
     }
 }
 
+@keyframes col{
+    0%,100%{
+        color:rgb(255, 106, 0);
+    }
+}
 
-/* Creacion de la animacion de los iconos */
 @keyframes iconos {
     0%{
         width: 40px;
@@ -419,19 +421,6 @@ a{
         box-shadow: 0px 0px 5px 5px rgba(255, 255, 255, 0.5);
     }
 }
-
-/* animacion de cambio de color del texto segun el libro mostrado */
-
-@keyframes letras_z {  
-    0%, 100% {
-        color: rgb(226, 113, 0); 
-    }
-    20%, 40%, 60%, 80% {
-        color: white; 
-    }
-}
-
-/* adaptacion a dispositivos mobiles */
 
 @media only screen and (max-width:436px){
     .menu * {
@@ -483,30 +472,5 @@ a{
     .s4{
         grid-row: 8/10;
         grid-column: 1/13;
-    }
-}
-
-/* adaptacion a dispositivos tablets */
-
-@media only screen and (max-width:740px){
-    .menu *{
-        font-size: 35px;
-    }
-
-    .po1{
-        width: 55%;
-        background-size: 170px 300px;
-    }
-
-    .po2{
-        width: 45%;
-    }
-
-    .lista{
-        font-size: 15px;
-    }
-
-    .titulo{
-        font-size: 25px;
     }
 }

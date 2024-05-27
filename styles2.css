@@ -1,0 +1,289 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: 0;
+}
+
+body{
+    background-color:hsl(0,0%,5.88%);
+}
+
+div{
+    color: white;
+}
+div>a{
+    color: white;
+}
+
+.menu{
+    background-color: hsl(0,0%,5.88%);
+    padding: 5px;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    animation: des_men 3s forwards;
+}
+
+.menu *{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    background-color: #7B3713;
+    border: 1px #3C1A07 solid;
+    color:whitesmoke;
+    font-size: 50px;
+    font-family: "Italianno", cursiva;
+}
+
+a{
+    text-decoration: none;
+    border:0;
+    width: 100%;
+    height: 100%;
+}
+
+.lo{
+    background-color: hsl(0,0%,5.88%);
+    border: none;
+}
+
+.in{
+    border-radius: 0 0 0 60%;
+}
+.in>a{
+    border-radius: 0 0 0 60%;
+}
+
+.ac>a{
+    animation: me 6s linear infinite;
+}
+
+.logo{
+    width: 50%;
+    height: 95%;
+    border-radius: 50%;
+    animation: borde 6s linear infinite,des_menu_cont 3s forwards 2s ;
+}
+
+.fondo{
+    width: 100%;
+    height: 120vh;
+    background-image: url(https://th.bing.com/th/id/R.e21158fa932fd2c60fdee3ccd34c95d0?rik=xLpZuP4V4hJIzg&riu=http%3a%2f%2fwww.solofondos.com%2fwp-content%2fuploads%2f2015%2f12%2ftextura-de-madera-oscura-1553.jpg&ehk=Y99WCqN%2fdH7Xwvt%2f3Z0O9jGxj26PBhHp9v9NRJqwYwg%3d&risl=&pid=ImgRaw&r=0);
+    background-position: center;
+    background-size: cover;    
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: space-evenly ;
+}
+
+
+.cont{
+    margin: 10px;
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cont>div{
+    border: 2px #3C1A07 solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.info_local{
+    background-color: #7B3713;
+    width: 30%;
+    height: 50%;
+    margin-right: 10px;
+}
+.img_local{
+    width: 40%;
+    height: 100%;
+    background-color: #7B3713;
+}
+.info,.img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cont2{
+    margin: 10px;
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cont2>div{
+    border: 2px #3C1A07 solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.info_ubi{
+    background-color: #7B3713;
+    width: 30%;
+    height: 50%;
+    margin-right: 10px;
+}
+.img_ubi{
+    width: 40%;
+    height: 100%;
+    background-color: #7B3713;
+}
+.info,.img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.copyright{
+    width: 100%;
+    height: 20vh;
+}
+.artC1 {
+    opacity: 50%;
+    font-size: 40px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Italianno", cursiva;
+    text-shadow: 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff, 0 0 50px #7B3713, 0 0 70px #7B3713, 0 0 80px #7B3713, 0 0 150px #7B3713;
+}
+
+.icons{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.icons>div>a>svg{
+    opacity: 50%;
+    display: flex;
+}
+.icons>div>a>svg{
+    border-radius: 50%;
+}
+.icons>div>a>svg:hover{
+    animation: iconos 5s forwards ;
+}
+
+.me>a,.in>a,.le>a{
+    transition: all 0.5s;
+}
+
+.me>a:hover{
+    box-shadow: inset 0 0 10px 5px rgb(161, 161, 161);
+}
+
+.in>a:hover{
+    box-shadow: inset 0 0 10px 5px rgb(161, 161, 161);
+}
+
+.le>a:hover{
+    box-shadow: inset 0 0 10px 5px rgb(161, 161, 161);
+
+}
+
+
+@keyframes borde{
+    0%{
+        filter:drop-shadow(0px 0px 15px rgb(114, 45, 18));
+    }
+
+    50%{
+        filter:drop-shadow(0px 0px 15px rgb(197, 189, 189));
+    }
+
+    75%{
+        filter:drop-shadow(0px 0px 15px rgb(119, 44, 0));
+    }
+
+    100%{
+        filter:drop-shadow(0px 0px 15px rgb(114, 45, 18));
+    }
+}
+
+@keyframes me{
+    0%{
+        box-shadow: inset 0 0 10px 5px rgb(119, 44, 0)
+    }
+
+    50%{
+        box-shadow: inset 0 0 10px 5px rgb(27, 27, 27);
+    }
+
+    100%{
+        box-shadow: inset 0 0 10px 5px rgb(119, 44, 0)
+    }
+}
+@keyframes iconos {
+    0%{
+        width: 40px;
+        height: auto;
+        box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.5);
+    }
+    50%{
+        opacity: 100%;
+        width: 45px;
+        height: auto;
+        box-shadow: 0px 0px 5px 5px rgba(255, 255, 255, 0.5);
+    }
+    100%{
+        opacity: 100%;
+        width: 45px;
+        height: auto;
+        box-shadow: 0px 0px 5px 5px rgba(255, 255, 255, 0.5);
+    }
+}
+
+
+@media only screen and (max-width:436px){
+    .menu *{
+        font-size: 25px;
+    }
+    .logo{
+        width: 100%;
+        height: 100%;
+    }
+    .lo{
+        scale: 0.9;
+    }
+    .cont{
+        width: 90%;
+        height: auto;
+        flex-flow: row wrap;
+    }
+    .info_local{
+        width: 100%;
+        margin: 20px;
+    }
+    .img_local{
+        width: 100%;
+    }
+    .cont2{
+        width: 90%;
+        height: auto;
+        flex-flow: row wrap;
+    }
+    .info_ubi{
+        width: 100%;
+        margin: 20px;
+    }
+    .img_ubi{
+        width: 100%;
+    }
+
+    .copyright{
+        height: 10%;
+    }
+
+
+
+
+}
+
