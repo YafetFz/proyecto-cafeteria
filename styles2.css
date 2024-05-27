@@ -168,7 +168,7 @@ iframe{
 }
 
 .eslogan{
-    font-size: 50px;
+    font-size: 40px;
 }
 
 .copyright{
@@ -310,6 +310,9 @@ iframe{
 
     .copyright{
         height: 10%;
+    }
+    .eslogan{
+        font-size: 10px;
     }
 
 
