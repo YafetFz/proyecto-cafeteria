@@ -284,6 +284,28 @@ a{
     }
 }
 
+
+/* parte reponsive en tablets */
+
+@media only screen and (max-width:740px){
+    .menu *{
+        font-size: 35px;
+    }
+
+    .lista{
+        font-size: 15px;
+    }
+
+    .titulo{
+        font-size: 25px;
+    }
+
+    .c1,.h2,.co1,.p2{
+        height: 90%;
+    }
+}
+
+
 /* Creacion de parte adaptable a dispositivos mobiles */
 
 @media only screen and (max-width:436px){
@@ -374,25 +396,5 @@ a{
     }
     
     
-}
-
-/* parte reponsive en tablets */
-
-@media only screen and (max-width:740px){
-    .menu *{
-        font-size: 35px;
-    }
-
-    .lista{
-        font-size: 15px;
-    }
-
-    .titulo{
-        font-size: 25px;
-    }
-
-    .c1,.h2,.co1,.p2{
-        height: 90%;
-    }
 }
 
