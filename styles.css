@@ -68,8 +68,8 @@ a{
     height: 0%;
     opacity: 0%;
     width: 100%;
-    height: 120vh;
-    background-image: url(https://th.bing.com/th/id/R.e21158fa932fd2c60fdee3ccd34c95d0?rik=xLpZuP4V4hJIzg&riu=http%3a%2f%2fwww.solofondos.com%2fwp-content%2fuploads%2f2015%2f12%2ftextura-de-madera-oscura-1553.jpg&ehk=Y99WCqN%2fdH7Xwvt%2f3Z0O9jGxj26PBhHp9v9NRJqwYwg%3d&risl=&pid=ImgRaw&r=0);
+    height: auto;
+    background-image: url(imagenes/Fondo.jpg);
     background-position: center;
     background-size: cover;    
     display: flex;
@@ -80,10 +80,11 @@ a{
 
 .fondo>div{
     font-family: "kalam",cursiva;
+    margin: 50px;
 }
 
 .saludo{
-    width: 80%;
+    width: 100%;
     height: auto;
     background-color: #7B3713;
     border: 2px black solid;
@@ -93,31 +94,35 @@ a{
     align-items: center;
 }
 .saludo>div{
-    width: 50%;
-    height: 30vh;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.img>img{
+
+.imgs{
+    width: 50%;
+}
+
+.imgs>img{
+    border: 5px #3C1A07 solid;
+    width: 100%;
     opacity: 0%;
-    width: 90%;
-    height: 90%;
-    background-size: cover;
-    background-position: center;
     animation: imagen 5s forwards 5s;
-    position: relative;
-    top: 0%;
 }
 
 .textogood{
+    flex-basis: 90%;
     animation: titulo 2s forwards 4s;
     opacity: 0%;
-    font-size: 80px;
+    font-size:90px;
     font-family: "Italianno", cursiva;
 }
 
 .text{
+    width: 50%;
+    padding: 20px;
+    font-size: 17px;
     opacity: 0%;
     animation: letras 5s forwards 6s;
 }
@@ -155,17 +160,18 @@ a{
 }
 
 .ayuda2{
-    width: 100%;
+    width: 100%; 
 }
 .art2,.art3,.art4{
     opacity: 0%;
     animation: letras 5s forwards 8s;
     border: 2px black solid;
     background-color: #7B3713;
-    width: 20%;
+    width: 100%;
     height: 10vh;
     font-size: 20px;
     display: flex;
+    flex-flow: wrap;
     justify-content: center;
     align-items: center;
 }
@@ -179,13 +185,37 @@ a{
     border: 2px black solid;
     background-color: #7B3713;
     width: 40%;
-    height: 10vh;
+    height: 70vh;
     padding: 20px;
-    font-size: 15px;
+    font-size: 17px;
+    text-align: justify;
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: wrap;
     justify-content: center;
     align-items: center;
+}
+.cafe,.libros,.clientes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cafe>img{
+    width: 70%;
+    height: auto;
+    border: 5px #3C1A07 solid;  
+}
+.libros>img{ 
+    width: 90%;
+    height: auto;
+    border: 5px #3C1A07 solid;
+    background-image: url(imagenes/R.jpg);
+    background-position: center;
+    background-size: cover; 
+}
+.clientes>img{
+    width: 80%;
+    height: auto;
+    border: 5px #3C1A07 solid; 
 }
 
 .textoresponsive{
@@ -196,14 +226,13 @@ a{
     width: 100%;
     height: 20vh;
 }
-.artC1 {
-    opacity: 50%;
-    font-size: 40px;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.artC1{
+    color: ghostwhite;
     font-family: "Italianno", cursiva;
+    font-size: 50px;
+    text-align: center;
+    padding-top: 5px;
+    opacity: 0.8;
     text-shadow: 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff, 0 0 50px #7B3713, 0 0 70px #7B3713, 0 0 80px #7B3713, 0 0 150px #7B3713;
 }
 
@@ -364,25 +393,25 @@ a{
     .lo{
         scale: 0.9;
     }
-
-
-    .fondo{
-        height: 100%;
-    }
     
     .saludo{
-        margin-top: 20px;
-        margin-bottom: 20px;
-        flex-flow: column wrap;
+        width: 100%;
+        flex-flow: row wrap;
     }
-    .img{
+    .imgs{
+        width: 100%;
         order: 2;
     }
-    .img>img{
-        width: 190%;
+    .imgs>img{
+        width: 90%;
     }
     .textogood{
         animation: titulo 1ms forwards;
+    }
+    .text{
+        flex-basis: 100%;
+        padding: 10px;
+        font-size: 14px;
     }
     .Presentaciones_container{
       width: 90%;
@@ -408,17 +437,19 @@ a{
         flex-flow: column wrap;
     }
     .art5,.art6,.art7{
+        font-size: 12px;
         width: 90%;
         height: auto;
         flex-flow: row wrap;
     }
     .art5>div,.art6>div,.art7>div{
         font-size: 25px;
-        margin-top: 10px;
+        margin-top: 12px;
     }
 
     .art5>img,.art6>img,.art7>img{
-        margin-top: 10px;
+        height: auto;
+        margin-top: 1px;
     }
     
 

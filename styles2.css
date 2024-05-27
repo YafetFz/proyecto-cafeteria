@@ -65,9 +65,14 @@ a{
     animation: borde 6s linear infinite,des_menu_cont 3s forwards 2s ;
 }
 
+.fondo>div{
+    font-family: "kalam",cursiva;
+    margin: 30px;
+}
+
 .fondo{
     width: 100%;
-    height: 120vh;
+    height: auto;
     background-image: url(https://th.bing.com/th/id/R.e21158fa932fd2c60fdee3ccd34c95d0?rik=xLpZuP4V4hJIzg&riu=http%3a%2f%2fwww.solofondos.com%2fwp-content%2fuploads%2f2015%2f12%2ftextura-de-madera-oscura-1553.jpg&ehk=Y99WCqN%2fdH7Xwvt%2f3Z0O9jGxj26PBhHp9v9NRJqwYwg%3d&risl=&pid=ImgRaw&r=0);
     background-position: center;
     background-size: cover;    
@@ -79,9 +84,8 @@ a{
 
 
 .cont{
-    margin: 10px;
     width: 100%;
-    height: 30%;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -95,14 +99,27 @@ a{
 .info_local{
     background-color: #7B3713;
     width: 30%;
-    height: 50%;
+    height: auto;
+    padding: 20px;
+    text-align: justify;
     margin-right: 10px;
 }
 .img_local{
-    width: 40%;
-    height: 100%;
+    width: 50%;
+    height: auto;
     background-color: #7B3713;
 }
+.img{
+    width: 100%;
+    height: auto;
+    padding: 20px;
+}
+.img>img{
+    border: 5px #3C1A07 solid;
+    width: 80%;
+    height: 90%;
+}
+
 .info,.img{
     display: flex;
     justify-content: center;
@@ -112,7 +129,7 @@ a{
 .cont2{
     margin: 10px;
     width: 100%;
-    height: 30%;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -126,32 +143,45 @@ a{
 .info_ubi{
     background-color: #7B3713;
     width: 30%;
-    height: 50%;
+    height: auto;
+    padding: 20px;
+    text-align: justify;
     margin-right: 10px;
 }
 .img_ubi{
-    width: 40%;
-    height: 100%;
+    width: 50%;
+    height: auto;
     background-color: #7B3713;
 }
+
+iframe{
+    width: 100%;
+    height: 500px;
+}
+
+
+
 .info,.img{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+.eslogan{
+    font-size: 50px;
+}
+
 .copyright{
     width: 100%;
     height: 20vh;
 }
-.artC1 {
-    opacity: 50%;
-    font-size: 40px;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.artC1{
+    color: ghostwhite;
     font-family: "Italianno", cursiva;
+    font-size: 50px;
+    text-align: center;
+    padding-top: 5px;
+    opacity: 0.8;
     text-shadow: 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff, 0 0 50px #7B3713, 0 0 70px #7B3713, 0 0 80px #7B3713, 0 0 150px #7B3713;
 }
 
