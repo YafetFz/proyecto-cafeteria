@@ -186,7 +186,7 @@ a{
     border: 2px black solid;
     background-color: #7B3713;
     width: 40%;
-    height: 70vh;
+    height: auto;
     padding: 20px;
     font-size: 17px;
     text-align: justify;
@@ -201,12 +201,12 @@ a{
     justify-content: center;
 }
 .cafe>img{
-    width: 50%;
+    width: 80%;
     height: auto;
     border: 5px #3C1A07 solid;  
 }
 .libros>img{ 
-    width: 50%;
+    width: 80%;
     height: auto;
     border: 5px #3C1A07 solid;
     background-image: url(imagenes/R.jpg);
@@ -214,7 +214,7 @@ a{
     background-size: cover; 
 }
 .clientes>img{
-    width: 50%;
+    width: 80%;
     height: auto;
     border: 5px #3C1A07 solid; 
 }
