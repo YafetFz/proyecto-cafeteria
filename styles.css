@@ -179,6 +179,8 @@ a{
 
 .ayuda3{
     width: 100%;
+    display: flex;
+    align-items: stretch;
 }
 .art5,.art6,.art7{
     opacity: 0%;
