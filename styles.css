@@ -179,6 +179,8 @@ a{
 
 .ayuda3{
     width: 100%;
+    display: flex;
+    align-items: stretch;
 }
 .art5,.art6,.art7{
     opacity: 0%;
@@ -381,8 +383,52 @@ a{
 }
 
 
-@media only screen and (max-width:436px){
+@media only screen and (max-width:740px){
+    .menu *{
+        font-size: 35px;
+    }
+    .textogood{
+        animation: titulo 1ms forwards;
+    }
+    .imgs{
+        width: 100%;
+    }
+    .imgs>img{
+        width: 90%;
+    }
+    .text{
+        flex-basis: 80%;
+        font-size: 14px;
+    }
+    .Presentaciones_container{
+      width: 90%;
+    }
+    .ayuda{
+        width: 90%;
+    }
+    .ayuda2>div{
+        height: 50px;
+    }
+    .art1{
+       width: 100%;
+    }
+    .art5,.art6,.art7{
+        font-size: 12px;
+        width: 90%;
+        height: auto;
+        flex-flow: row wrap;
+    }
+    .art5>div,.art6>div,.art7>div{
+        font-size: 25px;
+        margin-top: 12px;
+    }
+    .art5>img,.art6>img,.art7>img{
+        height: auto;
+        margin-top: 1px;
+    }
 
+}
+@media only screen and (max-width:436px){
     .menu *{
         font-size: 25px;
     }
@@ -390,11 +436,6 @@ a{
         width: 100%;
         height: 100%;
     }
-
-    .lo{
-        scale: 0.9;
-    }
-    
     .saludo{
         width: 100%;
         flex-flow: row wrap;
@@ -468,8 +509,6 @@ a{
 }
 
 
-@media only screen and (max-width:740px){
-}
 
 
 
