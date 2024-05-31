@@ -139,7 +139,7 @@ a{
 .Presentaciones_container>div{
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
     margin-bottom: 20px;
     gap: 30px ;
 }
@@ -179,8 +179,6 @@ a{
 
 .ayuda3{
     width: 100%;
-    display: flex;
-    align-items: stretch;
 }
 .art5,.art6,.art7{
     opacity: 0%;
